@@ -228,6 +228,8 @@
         </ul>
       </section>
     </main>
+
+  
 <!--footer-->
   <footer class="footer">
     <div class="container">
@@ -278,7 +280,85 @@
           </li>
         </ul>
       </div>
+      <div>
+        <form action="#" class="followus-form">
+          <p>Subscribe to the newsletter</p>
+          <input type="email" class="followus-form-input" name="user-mail" placeholder="E-mail">
+          <button type="submit" class="action-button">
+            Subscribe
+              <svg class="subscription" width="24" height="24">
+                <use href="./images/icons.svg#send-btn"></use>
+              </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
-  </body>
+<!--modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+
+        <button class="btn-modal-close" data-modal-close>
+          <svg class="close-icon" width="30" height="30">
+            <use href="./images/typical-icons.svg#close-form-btn"></use>
+          </svg>
+        </button>
+
+        <form class="submit-form">
+
+          <p class="submit-form-title">Leave your information and we'll call you back</p>
+
+          <div class="submit-form-element">
+            <label class="submit-form-element-lbl " for="username"> Name </label>
+            <div class="input-wrapper">
+              <input class="submit-form-element-input element-decoration" type="text" name="username" id="username" />
+              <svg class="submit-form-element-input-icon" width="18" height="18">
+                <use href="./images/forms.svg#person-form"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="submit-form-element">
+            <label class="submit-form-element-lbl" for="tel"> Telephone </label>
+            <div class="input-wrapper">
+              <input class="submit-form-element-input element-decoration" type="tel" name="tel" id="tel" />
+              <svg class="submit-form-element-input-icon" width="18" height="18">
+                <use href="./images/forms.svg#phone-form"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="submit-form-element">
+            <label class="submit-form-element-lbl" for="email"> E-mail </label>
+            <div class="input-wrapper">
+              <input class="submit-form-element-input element-decoration" type="email" name="email" id="email" />
+              <svg class="submit-form-element-input-icon" width="18" height="18">
+                <use href="./images/forms.svg#email-form"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="submit-form-element">
+            <label class="submit-form-element-lbl" for="comment"> Comments </label>
+            <textarea class="submit-form-textarea element-decoration" name="comment" id="comment" placeholder="Enter Text"></textarea>
+          </div>
+
+          <label class="subscription-form-element" for="agreement">
+            <input class="subscription-form-input" type="checkbox" name="agreement" id="agreement" value="approved" />
+            <svg class="subscription-form-input-icon" width="16" height="15">
+              <use href="./images/forms.svg#check"></use>
+            </svg>
+            <span>I agree with the letter and accept the</span>
+            <a class="subscription-form-link" href="">Terms and Conditions</a>
+          </label>
+
+          <button class="modal-submit-btn action-button" name="modal-submit-btn" type="submit">Send</button>
+
+        </form>
+      </div>
+    </div>
+
+<script src="./js/modal.js"></script>
+
+</body>
 </html>
